@@ -7,4 +7,9 @@ KeySniff has two parts:
 
 # Usage
 
-<h2>On Server Side</h2>
+## On Server Side
+1. Install NodeJS on your server.
+2. Install the server NPM dependencies:
+```bash
+sudo npm install
+```
