@@ -9,7 +9,21 @@ KeySniff has two parts:
 
 ## On Server Side
 1. Install NodeJS on your server.
-2. Install the server NPM dependencies:
+```bash
+curl -sL https://deb.nodesource.com/setup_16.x -o /tmp/nodesource_setup.sh;
+chmod +x /tmp/nodesource_setup.sh
+/tmp/nodesource_setup.sh
+sudo apt install nodejs -y
+```
+
+2. Clone the server repository and CD into the server directory.
+
+3. Install the server NPM dependencies:
 ```bash
 sudo npm install
+```
+
+4. Initiating the server:
+```bash
+sudo node server.js --port 8080 --key secret-key --output passowrds.txt
 ```
