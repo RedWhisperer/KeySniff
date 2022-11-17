@@ -17,6 +17,10 @@ sudo apt install nodejs -y
 ```
 
 2. Clone the server repository and CD into the server directory.
+```bash
+https://github.com/RedWhisperer/KeySniff.git
+cd KeySniff/ServerSide
+```
 
 3. Install the server NPM dependencies:
 ```bash
