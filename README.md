@@ -18,7 +18,7 @@ sudo apt install nodejs -y
 
 2. Clone the server repository and CD into the server directory.
 ```bash
-https://github.com/RedWhisperer/KeySniff.git
+git clone https://github.com/RedWhisperer/KeySniff.git
 cd KeySniff/ServerSide
 ```
 
@@ -29,7 +29,7 @@ sudo npm install
 
 4. Initiating the server:
 ```bash
-sudo node server.js --port 8080 --key secret-key --output passowrds.txt
+sudo node server.js --port [8080] --key [secret-key] --output [passowrds.txt]
 ```
 
 ## On Target's Side
